@@ -43,7 +43,7 @@ Set `visible: false` to hide a draft. Set `status: in-progress` to keep it out o
 
 ## Publication setup
 
-GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. The workflow builds with `SITE_URL=https://ahmed-sayed.me`, preserves the custom domain through `public/CNAME`, and deploys the static output from `dist/`. Astro emits canonical URLs and a sitemap through `@astrojs/sitemap`.
+GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. The workflow builds with `SITE_URL=https://ahmedsayed28.github.io/ahmed-sayed-portfolio` and deploys the static output from `dist/`. Astro emits canonical URLs and a sitemap through `@astrojs/sitemap`. A custom domain can be added later after its DNS records are configured.
 
 ## Dependencies
 
