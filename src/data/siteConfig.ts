@@ -5,6 +5,7 @@ export const siteConfig = {
     work: true,
     about: true,
     skills: true,
+    testimonials: true,
     contact: true,
   },
 } as const;

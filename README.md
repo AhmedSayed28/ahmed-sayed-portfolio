@@ -29,6 +29,7 @@ The static output is in `dist/`. No backend, database, account, or CMS is requir
 - Text and biography: `src/data/copy.ts` and `src/data/biography.ts`.
 - Employment roles: `src/data/experience.ts`. Dates are intentionally absent until verified.
 - Skill groups: `src/data/skills.ts`.
+- Testimonials: `curated_portfolio_testimonials.json`. `homepageOrder` controls the six home cards and `allTestimonialsOrder` controls `/kind-words/`. Set `visible: false` on a record to hide it, or edit the arrays to reorder records. Student cards use verbatim `quote.displayExcerpt` text and offer the complete `quote.original` in an expandable panel. Named LinkedIn recommendations retain their source profile URLs. Mockup-only student names are excluded from the project copy; do not add unverified identities or publish student feedback without the required review.
 - Section visibility, title, and description: `src/data/siteConfig.ts`. Disabling a section also removes its navigation link; disabling Work removes its project detail routes.
 - Colors, type, and spacing: `src/styles/tokens.css` and `src/styles/global.css`.
 

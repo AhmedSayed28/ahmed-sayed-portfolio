@@ -1,9 +1,10 @@
 ---
 import { copy } from '../../data/copy';
 import { profile } from '../../data/profile';
+import { siteConfig } from '../../data/siteConfig';
 import SectionHeading from '../common/SectionHeading.astro';
 ---
 <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div class="shell contact-grid">
-  <div><SectionHeading id="contact-title" index="04" endpoint="POST /hello" title={copy.contact.title} /><p class="contact-personality">{copy.contact.personality}</p><p class="contact-description">{copy.contact.description}</p></div>
+  <div><SectionHeading id="contact-title" index={siteConfig.sections.testimonials ? '05' : '04'} endpoint="POST /hello" title={copy.contact.title} /><p class="contact-personality">{copy.contact.personality}</p><p class="contact-description">{copy.contact.description}</p></div>
   <div class="contact-links"><span class="mono">OPEN CHANNELS / 003</span>{profile.links.showEmail && <a href={`mailto:${profile.links.email}`}><span>Email</span><strong>{profile.links.email}</strong><span aria-hidden="true">↗</span></a>}<a href={profile.links.linkedin} target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Professional profile <span class="sr-only">(opens in new tab)</span></strong><span aria-hidden="true">↗</span></a><a href={profile.links.github} target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>Code & projects <span class="sr-only">(opens in new tab)</span></strong><span aria-hidden="true">↗</span></a></div>
 </div></section>

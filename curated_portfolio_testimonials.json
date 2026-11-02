@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 2,
+  "editorialNotes": {
+    "selection": "6 of 16 original student responses, plus 3 professional LinkedIn recommendations, which remain unchanged.",
+    "selectionPolicy": "Each selected student testimonial is from a single real response; the excerpt is verbatim and exists in its preserved original. No fabricated composites.",
+    "attribution": "Students names are unknown. previewOnlyFakeName is FOR MOCKUP ONLY and cannot be published as if authentic. Render author.displayName publicly until verified names and consent are supplied.",
+    "colleaguePolicy": "Three LinkedIn recommendations retained verbatim from user-supplied source; show authentic names and provided LinkedIn profile links.",
+    "languagePolicy": "Arabic student text is RTL; LinkedIn English quotes are LTR. Preserve original words, spelling, and intent."
+  },
+  "homepageOrder": [
+    "colleague-mohamed-hawary",
+    "student-01",
+    "colleague-abdallah-habib",
+    "student-05",
+    "colleague-assem-ashraf",
+    "student-16"
+  ],
+  "allTestimonialsOrder": [
+    "colleague-mohamed-hawary",
+    "colleague-abdallah-habib",
+    "colleague-assem-ashraf",
+    "student-01",
+    "student-02",
+    "student-03",
+    "student-05",
+    "student-13",
+    "student-16"
+  ],
+  "testimonials": [
+    {
+      "id": "student-01",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "احسن حد اتعلمت منه، تجربتي مع المهندس أحمد السيد كانت مميزة جدًا، لأنه مش بس بيشرح المعلومة، لكن كمان بيوصلها بطريقة بسيطة وعملية تخليك تفهمها وتعرف تطبقها. بجد استفدت منه كتير، وكان ليه تأثير إيجابي على طريقة تفكيري وتعلمي. ❤️",
+        "englishTranslation": null,
+        "displayExcerpt": "لأنه مش بس بيشرح المعلومة، لكن كمان بيوصلها بطريقة بسيطة وعملية تخليك تفهمها وتعرف تطبقها."
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": true,
+      "order": 1,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Clarity & practical explanation"
+    },
+    {
+      "id": "student-02",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "محترم جدا وبيعرف يوصل المعلومه كويس وبيعيدها اكتر من مره لو لسه فيه حد مفهمش وبيشجع الطلاب انهم يشاركو حتي لو مكانوش عارفين. بيساعدنا دايما لو فيه اي حاجه واقفه معانا وبيستني الطلاب يدخلو الميتنج كلهم ولو حد دخل متاخر بيديله brief عن اللي اتشرح.",
+        "englishTranslation": null,
+        "displayExcerpt": "بيعرف يوصل المعلومه كويس وبيعيدها اكتر من مره لو لسه فيه حد مفهمش وبيشجع الطلاب انهم يشاركو حتي لو مكانوش عارفين."
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": false,
+      "order": 2,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Patience & inclusive learning"
+    },
+    {
+      "id": "student-03",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "بشمهندس شاطر جدا فمجاله بيساعدنا من كل قلبه بيعتبرنا اخواته بجد اللي عايز يشوفهم احسن ناس فالدنيا بيحفزنا علطول ويشجعنا بيحب يسمع اراءنا و يسهل علينا المعلومه عشان مننسهاش حقيقي الواحد محظوظ انه اخد معاه",
+        "englishTranslation": null,
+        "displayExcerpt": "بيحفزنا علطول ويشجعنا بيحب يسمع اراءنا و يسهل علينا المعلومه عشان مننسهاش"
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": false,
+      "order": 3,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Encouragement & listening"
+    },
+    {
+      "id": "student-05",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "بجد احسن انستراكتور اتعلمت منه و اتعاملت معاه\nلانه مبيسبكش غير وانت فاهم الحاجه كويس اوي ومبيبخلش ب اي معلومه حتى لو برا إطار السيشن بيديك كل معلوماته وخبراته عادي جدا\nده غير بقى تعامله معانا وان العلاقه بينا ك جروب وبين البشمهندس احمد مش مجرد طلاب و انستراكتور لا ده حرفيا اخ ولو بعتله في اي وقت تسأله علي حاجه وقفه معاك بره وقت السيشن بيرد علينا عادي .\nتلخيصا بقى هو شخصيه محترمه وخلوقه ولطيفه جدا واتمنى اني حتى بعد ما المبادره تخلص اني افضل اتعلم منه",
+        "englishTranslation": null,
+        "displayExcerpt": "مبيبخلش ب اي معلومه حتى لو برا إطار السيشن بيديك كل معلوماته وخبراته عادي جدا"
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": true,
+      "order": 4,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Mentorship beyond sessions"
+    },
+    {
+      "id": "student-13",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "حد بيراعي ربنا جدا في شرحه وبيعلمن فعلا اللي ببحصل في الشغل والشركات وبفضل يعيد في الشرح لحد ما تفهم ويربطهولك باللي بيحصل في الحقيقة وبيطبق معاك واحدة واحدة ومش بيتفه من اي سؤال بالعكس اي سؤال بيساعدك توصل لاجابته وتفهمه ويوسع مداركك",
+        "englishTranslation": null,
+        "displayExcerpt": "ويربطهولك باللي بيحصل في الحقيقة وبيطبق معاك واحدة واحدة ومش بيتفه من اي سؤال بالعكس اي سؤال بيساعدك توصل لاجابته وتفهمه ويوسع مداركك"
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": false,
+      "order": 5,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Real-world knowledge & thoughtful questions"
+    },
+    {
+      "id": "student-16",
+      "group": "student",
+      "author": {
+        "name": null,
+        "displayName": "متدرب/ة — الاسم غير متاح",
+        "attributionStatus": "anonymous"
+      },
+      "quote": {
+        "language": "ar",
+        "original": "تجربة ممتازة ..متابعة وشرح وامثلة من واقع الشغل العملي والاهتمام بالجانب التطبيقي والfeedbacking والتطوير اول بأول بصراحة اكبر ميزة غير التعامل professional اللي ساعدنا نشوف م احمد ك قدوة حسنة مش علي قد المادة العلمية فقط",
+        "englishTranslation": null,
+        "displayExcerpt": "متابعة وشرح وامثلة من واقع الشغل العملي والاهتمام بالجانب التطبيقي والfeedbacking والتطوير اول بأول"
+      },
+      "source": {
+        "type": "student_feedback",
+        "platform": null,
+        "url": null,
+        "date": null
+      },
+      "featured": true,
+      "order": 6,
+      "publicationReviewRequired": true,
+      "editorialTheme": "Practical application & continuous feedback"
+    },
+    {
+      "id": "colleague-mohamed-hawary",
+      "group": "colleague",
+      "author": {
+        "name": "Mohamed Hawary",
+        "displayName": "Mohamed Hawary",
+        "role": "Software and AI Automation Testing Team Lead",
+        "relation": "Managed Ahmed directly",
+        "attributionStatus": "named"
+      },
+      "quote": {
+        "language": "en",
+        "original": "I highly recommend Ahmed Sayed for any team looking for a skilled and dedicated Automation Tester who can elevate the quality and efficiency of software testing.",
+        "englishTranslation": null
+      },
+      "source": {
+        "type": "linkedin_recommendation",
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mohamed-hawary-ba632b14a/",
+        "date": "2024-10-04"
+      },
+      "featured": true,
+      "order": 1,
+      "publicationReviewRequired": false
+    },
+    {
+      "id": "colleague-abdallah-habib",
+      "group": "colleague",
+      "author": {
+        "name": "Abdallah Habib",
+        "displayName": "Abdallah Habib",
+        "role": "Software Test Engineer | Manual, API & Automation Testing",
+        "relation": "Worked on the same team",
+        "attributionStatus": "named"
+      },
+      "quote": {
+        "language": "en",
+        "original": "I highly recommend Ahmed sayed as a Software Test Automation Engineer. Having worked closely with him, I’ve been impressed by ahmed sayed's expertise in test automation tools and frameworks such as Selenium, JUnit. They excels in designing and implementing effective test scripts, ensuring the quality and reliability of our software.\n\nAhmed sayed combines strong technical skills with a proactive approach to problem-solving. He consistently demonstrates attention to detail and a commitment to continuous improvement. His ability to collaborate effectively with team members and communicate complex technical concepts clearly has been invaluable to our projects.\n\nIn summary, Ahmed sayed is a dedicated and skilled professional who would be an asset to any organization. I highly recommend him for any role in software test automation.",
+        "englishTranslation": null
+      },
+      "source": {
+        "type": "linkedin_recommendation",
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/abdallah-habib-test/",
+        "date": "2024-09-09"
+      },
+      "featured": true,
+      "order": 2,
+      "publicationReviewRequired": false
+    },
+    {
+      "id": "colleague-assem-ashraf",
+      "group": "colleague",
+      "author": {
+        "name": "Assem Ashraf",
+        "displayName": "Assem Ashraf",
+        "role": "Senior Flutter & Full Stack Engineer | POS & E-commerce | Laravel, Django | Android & iOS Releases",
+        "relation": "Worked on the same team",
+        "attributionStatus": "named"
+      },
+      "quote": {
+        "language": "en",
+        "original": "I am writing to recommend Ahmed Sayed as Web Developer.\n\nAhmed Sayed is a highly skilled and experienced web developer with a strong understanding of the latest web technologies. They are proficient in a variety of programming languages, including HTML, CSS, JavaScript, and PHP. They are also familiar with a variety of web development frameworks, such as React, Angular, and Laravel.\n\nAhmed Sayed is also a highly motivated and self-driven individual. They are always willing to learn new things and take on new challenges. They are also a team player and are always willing to help out their colleagues.\n\nI have no doubt that Ahmed Sayed would be an asset to your company. He is a talented web developer with a strong work ethic and a positive attitude. I highly recommend them for the position.",
+        "englishTranslation": null
+      },
+      "source": {
+        "type": "linkedin_recommendation",
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/assemabudeif/",
+        "date": "2023-09-03"
+      },
+      "featured": false,
+      "order": 3,
+      "publicationReviewRequired": false
+    }
+  ]
+}

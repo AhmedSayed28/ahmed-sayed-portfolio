@@ -1,0 +1,12 @@
+---
+import { orderedTestimonials } from '../../data/testimonials';
+import SectionHeading from '../common/SectionHeading.astro';
+import TestimonialCard from './TestimonialCard.astro';
+
+const testimonials = orderedTestimonials('homepageOrder');
+---
+<section id="reviews" class="section testimonials-section" aria-labelledby="reviews-title"><div class="shell">
+  <div class="testimonials-intro"><SectionHeading id="reviews-title" index="04" endpoint="GET /human/reviews" title="Peer-reviewed. Human-approved." description="Some reviews come from code. The meaningful ones come from people." /><a class="testimonials-all-link" href="/kind-words/">Read all kind words <span aria-hidden="true">↗</span></a></div>
+  <div class="testimonials-grid">{testimonials.map((testimonial, index) => <TestimonialCard testimonial={testimonial} index={index + 1} />)}</div>
+  <p class="testimonials-footnote">Student responses are shown anonymously. Original wording is preserved in the expanded view.</p>
+</div></section>
