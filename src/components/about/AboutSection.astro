@@ -1,0 +1,11 @@
+---
+import { biography } from '../../data/biography';
+import { experience } from '../../data/experience';
+import SectionHeading from '../common/SectionHeading.astro';
+---
+<section id="about" class="section about-section" aria-labelledby="about-title"><div class="shell">
+  <SectionHeading id="about-title" index="02" endpoint="GET /about" title={biography.heading} />
+  <div class="about-intro"><p>{biography.introduction}</p><p>{biography.direction}</p></div>
+  <div class="about-grid"><div class="chapter-list">{biography.chapters.map((chapter) => <article class="chapter"><span>{chapter.number} /</span><div><h3>{chapter.title}</h3><p>{chapter.body}</p></div></article>)}</div><aside class="about-aside"><div class="aside-top"><span>FIELD NOTES / 002</span><span aria-hidden="true">✳</span></div><h3>Quality isn't a final check. It's how I think about the first line of code.</h3><p>{biography.annotation}</p><div class="aside-bottom">BUILDING BETTER SYSTEMS →</div></aside></div>
+  <details class="experience-disclosure"><summary>Experience index <span>View roles without unconfirmed dates ↗</span></summary><ul>{experience.map((item) => <li><strong>{item.role}</strong><span>{item.organization}</span></li>)}</ul></details>
+</div></section>

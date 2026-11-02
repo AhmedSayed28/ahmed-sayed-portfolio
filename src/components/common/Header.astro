@@ -1,0 +1,23 @@
+---
+import { siteConfig } from '../../data/siteConfig';
+
+const links = [
+  { label: 'Home', href: '/#home', enabled: true },
+  { label: 'Work', href: '/#work', enabled: siteConfig.sections.work },
+  { label: 'About', href: '/#about', enabled: siteConfig.sections.about },
+  { label: 'Skills', href: '/#skills', enabled: siteConfig.sections.skills },
+  { label: 'Contact', href: '/#contact', enabled: siteConfig.sections.contact },
+].filter((link) => link.enabled);
+---
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/#home" aria-label="Ahmed Sayed, home"><span class="wordmark-mark" aria-hidden="true">a<span>/</span>s</span><span>ahmed<span class="wordmark-light">/ human.dev</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      {links.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation"><span class="menu-lines" aria-hidden="true"></span><span>Menu</span></summary>
+      <nav aria-label="Mobile navigation">{links.map((link) => <a href={link.href}>{link.label}</a>)}</nav>
+    </details>
+  </div>
+</header>

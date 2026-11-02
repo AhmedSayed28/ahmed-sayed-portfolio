@@ -1,0 +1,8 @@
+---
+import { skillGroups } from '../../data/skills';
+import SectionHeading from '../common/SectionHeading.astro';
+---
+<section id="skills" class="section skills-section shell" aria-labelledby="skills-title">
+  <SectionHeading id="skills-title" index="03" endpoint="GET /toolkit" title="Under the hood." description="A clear view of what I use professionally and what I am building toward." />
+  <div class="skills-grid">{skillGroups.map((group) => <article class="skill-group"><div class="skill-group-top"><span>{group.number} / 03</span><span aria-hidden="true">↗</span></div><h3>{group.title}</h3><p>{group.description}</p><ul>{group.items.map((skill) => <li>{skill}</li>)}</ul></article>)}</div>
+</section>

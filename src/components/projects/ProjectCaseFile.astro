@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BusinessSpecimen from './BusinessSpecimen.astro';
+interface Props { project: CollectionEntry<'projects'>; index: number }
+const { project, index } = Astro.props;
+const data = project.data;
+const number = String(index).padStart(3, '0');
+---
+<article class="case-file">
+  <div class="case-file-head"><span class="file-icon" aria-hidden="true">▤</span><div><span class="case-category">{data.category}</span><span class="case-number">CASE FILE {number}</span></div></div>
+  <div class="case-file-grid">
+    <div class="case-copy"><p class="eyebrow">ENGINEERING RECORD / {number}</p><h3><a href={`/projects/${project.id}/`}>{data.title}</a></h3><p class="case-description">{data.description}</p><div class="case-notes"><div><h4>THE CHALLENGE / 01</h4><p>{data.problem}</p></div><div><h4>THE APPROACH / 02</h4><p>{data.approach}</p></div><div><h4>THE EDGE CASE / 03</h4><p>{data.edgeCase}</p></div></div><ul class="tag-list" aria-label="Technologies">{data.technologies.map((tech) => <li>{tech}</li>)}</ul><div class="case-links"><a href={`/projects/${project.id}/`}>Read case file <span aria-hidden="true">↗</span></a><a href={data.githubUrl} target="_blank" rel="noopener noreferrer">Inspect the source <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>{data.demoUrl && <a href={data.demoUrl} target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>}</div></div>
+    <div class="case-visual">{data.specimen ? <BusinessSpecimen kind={data.specimen} /> : data.coverImage ? <img src={data.coverImage} alt={`Cover illustration for ${data.title}`} loading="lazy" /> : <div class="case-visual-placeholder"><span>PROJECT / {number}</span><strong>{data.title}</strong></div>}</div>
+  </div>
+  <div class="case-file-foot"><span>{data.category.toUpperCase()} / {number}</span><span>SOURCE LINKED · CASE FILE</span></div>
+</article>

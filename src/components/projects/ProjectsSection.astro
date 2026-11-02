@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import { copy } from '../../data/copy';
+import SectionHeading from '../common/SectionHeading.astro';
+import ProjectCaseFile from './ProjectCaseFile.astro';
+
+const projects = (await getCollection('projects', ({ data }) => data.visible && data.status === 'published')).sort((a, b) => a.data.order - b.data.order);
+const featured = projects.filter((project) => project.data.featured);
+const remaining = projects.filter((project) => !project.data.featured);
+const nextNumber = String(projects.length + 1).padStart(3, '0');
+---
+<section id="work" class="section work-section shell" aria-labelledby="work-title">
+  <SectionHeading id="work-title" index="01" endpoint="GET /work" title={copy.work.title} description={copy.work.description} />
+  <div class="case-list">{featured.map((project, index) => <ProjectCaseFile project={project} index={index + 1} />)}{remaining.map((project, index) => <ProjectCaseFile project={project} index={featured.length + index + 1} />)}</div>
+  {remaining.length === 0 && <div class="projects-empty"><div class="empty-symbol" aria-hidden="true">◇</div><div><strong>{copy.work.empty}</strong><p>Next backend build: not released yet.</p></div><span class="mono">{nextNumber} / PENDING</span></div>}
+</section>

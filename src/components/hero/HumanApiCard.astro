@@ -1,0 +1,21 @@
+---
+import { profile } from '../../data/profile';
+import { copy } from '../../data/copy';
+import StatusBadge from './StatusBadge.astro';
+---
+<div class="identity-visual" aria-label="Illustrated operator identity card">
+  <div class="manual-sheet" aria-hidden="true"><div class="manual-sheet-top"><span>FIELD MANUAL / 001</span><span>↗</span></div><div class="manual-sheet-rule"></div><span class="manual-sheet-title">HUMAN<br />SPECIFICATION</span><span class="manual-sheet-foot">QA INSTINCTS: BUILT IN</span></div>
+  <div class="operator-card">
+    <div class="operator-top"><span class="mono">OPERATOR ID / 001</span><span class="operator-symbol" aria-hidden="true">✳</span></div>
+    <div class="api-strip"><span>GET /human/ahmed</span><span class="api-ok"><span aria-hidden="true">●</span> 200 OK</span></div>
+    <div class="operator-person">
+      <div class="portrait-frame">
+        {profile.portrait ? <img src={profile.portrait} alt={`Portrait of ${profile.displayName}`} width="176" height="176" /> : <svg viewBox="0 0 176 176" role="img" aria-label="Illustrated portrait placeholder"><circle cx="88" cy="64" r="25" fill="none" stroke="currentColor" stroke-width="4"/><path d="M43 143c0-28 19-46 45-46s45 18 45 46" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M39 35h11m-11 0v11m98 93h-11m11 0v-11" stroke="currentColor" stroke-width="2" fill="none"/></svg>}
+      </div>
+      <div><p class="operator-overline">THE HUMAN BEHIND THE CODE</p><h2>{profile.displayName}</h2><p class="operator-role">{profile.role}</p><p class="operator-location">↗ {profile.location}</p></div>
+    </div>
+    <div class="operator-facts"><div><span>CURRENT FOCUS</span><strong>{profile.currentFocus}</strong></div><div><span>BUILT-IN FEATURE</span><strong>QA instincts</strong></div></div>
+    <div class="operator-bottom"><StatusBadge /><span class="mono">v. HUMAN / 01</span></div>
+  </div>
+  <div class="operator-note"><span>OPERATOR NOTE /</span><p>{copy.hero.operatorNote}</p></div>
+</div>

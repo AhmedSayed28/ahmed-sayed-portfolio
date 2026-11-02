@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/hero/Hero.astro';
+import ProjectsSection from '../components/projects/ProjectsSection.astro';
+import AboutSection from '../components/about/AboutSection.astro';
+import SkillsSection from '../components/skills/SkillsSection.astro';
+import ContactSection from '../components/contact/ContactSection.astro';
+import { siteConfig } from '../data/siteConfig';
+---
+<BaseLayout><Hero />{siteConfig.sections.work && <ProjectsSection />}{siteConfig.sections.about && <AboutSection />}{siteConfig.sections.skills && <SkillsSection />}{siteConfig.sections.contact && <ContactSection />}</BaseLayout>

@@ -1,0 +1,16 @@
+---
+import { copy } from '../../data/copy';
+import { siteConfig } from '../../data/siteConfig';
+import HumanApiCard from './HumanApiCard.astro';
+---
+<section id="home" class="hero shell" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <div class="hero-kicker"><span class="kicker-line"></span><span>{copy.hero.eyebrow}</span><span class="kicker-number">/ 001</span></div>
+    <h1 id="hero-title"><span>{copy.hero.title}</span><span class="hero-headline-secondary">{copy.hero.secondLine}</span><em>{copy.hero.thirdLine}</em></h1>
+    <p class="hero-description">{copy.hero.description}</p>
+    <p class="signature"><span aria-hidden="true">“</span>{copy.hero.signature}<span aria-hidden="true">”</span></p>
+    <div class="hero-actions">{siteConfig.sections.work && <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>}{siteConfig.sections.contact && <a class="button button-text" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>}</div>
+    <div class="hero-scroll-note"><span aria-hidden="true">↓</span> SCROLL TO INSPECT THE HUMAN</div>
+  </div>
+  <HumanApiCard />
+</section>

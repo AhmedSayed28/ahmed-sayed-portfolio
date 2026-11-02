@@ -1,0 +1,13 @@
+---
+interface Props { kind: 'shopping-cart' }
+const { kind } = Astro.props;
+---
+{kind === 'shopping-cart' && <div class="specimen" aria-label="Illustrative shopping cart checkout scenario">
+  <div class="specimen-top"><span class="specimen-icon" aria-hidden="true">⌑</span><span>BUSINESS LOGIC / SPECIMEN 01</span></div>
+  <div class="specimen-rule"></div>
+  <div class="specimen-cart"><div class="basket-icon" aria-hidden="true">♧</div><div><strong>Cart contains 2 products</strong><span>Milk × 3 + Bread × 2</span></div></div>
+  <div class="specimen-step">Validate quantities against available stock <span aria-hidden="true">↓</span></div>
+  <div class="stock-list"><div><span>Milk</span><span>10 in stock → 7 left</span></div><div><span>Bread</span><span>20 in stock → 18 left</span></div></div>
+  <div class="specimen-total"><div><span>Checkout total</span><strong>EGP 135</strong></div><p>Cart clears after successful checkout</p></div>
+  <p class="specimen-disclaimer">Illustrative scenario · Not a live API</p>
+</div>}
