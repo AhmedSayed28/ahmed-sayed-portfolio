@@ -29,7 +29,7 @@ The static output is in `dist/`. No backend, database, account, or CMS is requir
 - Text and biography: `src/data/copy.ts` and `src/data/biography.ts`.
 - Employment roles: `src/data/experience.ts`. Dates are intentionally absent until verified.
 - Skill groups: `src/data/skills.ts`.
-- Testimonials: `curated_portfolio_testimonials.json`. `homepageOrder` controls the six home cards and `allTestimonialsOrder` controls `/kind-words/`. Set `visible: false` on a record to hide it, or edit the arrays to reorder records. Student cards use verbatim `quote.displayExcerpt` text and offer the complete `quote.original` in an expandable panel. Named LinkedIn recommendations retain their source profile URLs. Mockup-only student names are excluded from the project copy; do not add unverified identities or publish student feedback without the required review.
+- Testimonials: `curated_portfolio_testimonials.json` is the only content file to edit. `homepageOrder` controls the six home cards and `allTestimonialsOrder` controls `/kind-words/`; keep each record's `isFeatured` and `displayOrder` in sync with those arrays. Set `visible: false` to hide a record. Student cards display `author.displayName` and `quote.englishTranslation`, while `quote.original` preserves Arabic feedback privately in the source. Student names are temporary pseudonyms (`isPseudonym: true`) and are disclosed on both pages; replace them only after identity and publication permission are confirmed. Professional names, roles, full recommendation text, and LinkedIn URLs remain in the same data file.
 - Section visibility, title, and description: `src/data/siteConfig.ts`. Disabling a section also removes its navigation link; disabling Work removes its project detail routes.
 - Colors, type, and spacing: `src/styles/tokens.css` and `src/styles/global.css`.
 
@@ -43,7 +43,7 @@ Set `visible: false` to hide a draft. Set `status: in-progress` to keep it out o
 
 ## Publication setup
 
-This project has not been deployed. Before publishing, set `SITE_URL` to the final public origin in your environment (see `.env.example`). Astro will then emit canonical URLs and a sitemap through `@astrojs/sitemap`. Check the final host's path rules before deployment, particularly if hosting under a repository subpath.
+GitHub Pages deployment is configured in `.github/workflows/deploy-pages.yml`. The workflow builds with `SITE_URL=https://ahmed-sayed.me`, preserves the custom domain through `public/CNAME`, and deploys the static output from `dist/`. Astro emits canonical URLs and a sitemap through `@astrojs/sitemap`.
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "editorialNotes": {
     "selection": "6 of 16 original student responses, plus 3 professional LinkedIn recommendations, which remain unchanged.",
     "selectionPolicy": "Each selected student testimonial is from a single real response; the excerpt is verbatim and exists in its preserved original. No fabricated composites.",
-    "attribution": "Students names are unknown. previewOnlyFakeName is FOR MOCKUP ONLY and cannot be published as if authentic. Render author.displayName publicly until verified names and consent are supplied.",
+    "attribution": "Student display names are temporary pseudonyms, not verified identities. Disclose this visibly until names and publication permission are confirmed.",
     "colleaguePolicy": "Three LinkedIn recommendations retained verbatim from user-supplied source; show authentic names and provided LinkedIn profile links.",
-    "languagePolicy": "Arabic student text is RTL; LinkedIn English quotes are LTR. Preserve original words, spelling, and intent."
+    "languagePolicy": "Display the supplied English student translations and preserve the original Arabic feedback in data only. LinkedIn English recommendations remain verbatim."
   },
   "homepageOrder": [
     "colleague-mohamed-hawary",
@@ -32,13 +32,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Mariam Ayman",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "احسن حد اتعلمت منه، تجربتي مع المهندس أحمد السيد كانت مميزة جدًا، لأنه مش بس بيشرح المعلومة، لكن كمان بيوصلها بطريقة بسيطة وعملية تخليك تفهمها وتعرف تطبقها. بجد استفدت منه كتير، وكان ليه تأثير إيجابي على طريقة تفكيري وتعلمي. ❤️",
-        "englishTranslation": null,
+        "englishTranslation": "He doesn't just explain concepts. He makes them simple and practical, so you can truly understand and apply what you've learned.",
         "displayExcerpt": "لأنه مش بس بيشرح المعلومة، لكن كمان بيوصلها بطريقة بسيطة وعملية تخليك تفهمها وتعرف تطبقها."
       },
       "source": {
@@ -47,8 +48,9 @@
         "url": null,
         "date": null
       },
-      "featured": true,
-      "order": 1,
+      "isPseudonym": true,
+      "isFeatured": true,
+      "displayOrder": 4,
       "publicationReviewRequired": true,
       "editorialTheme": "Clarity & practical explanation"
     },
@@ -57,13 +59,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Nada Ahmed",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "محترم جدا وبيعرف يوصل المعلومه كويس وبيعيدها اكتر من مره لو لسه فيه حد مفهمش وبيشجع الطلاب انهم يشاركو حتي لو مكانوش عارفين. بيساعدنا دايما لو فيه اي حاجه واقفه معانا وبيستني الطلاب يدخلو الميتنج كلهم ولو حد دخل متاخر بيديله brief عن اللي اتشرح.",
-        "englishTranslation": null,
+        "englishTranslation": "Ahmed explains everything clearly and patiently. He never hesitates to repeat something until everyone understands, and he always encourages us to participate, even when we're unsure of the answer.",
         "displayExcerpt": "بيعرف يوصل المعلومه كويس وبيعيدها اكتر من مره لو لسه فيه حد مفهمش وبيشجع الطلاب انهم يشاركو حتي لو مكانوش عارفين."
       },
       "source": {
@@ -72,8 +75,9 @@
         "url": null,
         "date": null
       },
-      "featured": false,
-      "order": 2,
+      "isPseudonym": true,
+      "isFeatured": false,
+      "displayOrder": 5,
       "publicationReviewRequired": true,
       "editorialTheme": "Patience & inclusive learning"
     },
@@ -82,13 +86,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Mohamed Shaaban",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "بشمهندس شاطر جدا فمجاله بيساعدنا من كل قلبه بيعتبرنا اخواته بجد اللي عايز يشوفهم احسن ناس فالدنيا بيحفزنا علطول ويشجعنا بيحب يسمع اراءنا و يسهل علينا المعلومه عشان مننسهاش حقيقي الواحد محظوظ انه اخد معاه",
-        "englishTranslation": null,
+        "englishTranslation": "He constantly motivates and encourages us, listens to our opinions, and has a great way of making complicated concepts easy to understand and remember.",
         "displayExcerpt": "بيحفزنا علطول ويشجعنا بيحب يسمع اراءنا و يسهل علينا المعلومه عشان مننسهاش"
       },
       "source": {
@@ -97,8 +102,9 @@
         "url": null,
         "date": null
       },
-      "featured": false,
-      "order": 3,
+      "isPseudonym": true,
+      "isFeatured": false,
+      "displayOrder": 6,
       "publicationReviewRequired": true,
       "editorialTheme": "Encouragement & listening"
     },
@@ -107,13 +113,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Omar Mustafa",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "بجد احسن انستراكتور اتعلمت منه و اتعاملت معاه\nلانه مبيسبكش غير وانت فاهم الحاجه كويس اوي ومبيبخلش ب اي معلومه حتى لو برا إطار السيشن بيديك كل معلوماته وخبراته عادي جدا\nده غير بقى تعامله معانا وان العلاقه بينا ك جروب وبين البشمهندس احمد مش مجرد طلاب و انستراكتور لا ده حرفيا اخ ولو بعتله في اي وقت تسأله علي حاجه وقفه معاك بره وقت السيشن بيرد علينا عادي .\nتلخيصا بقى هو شخصيه محترمه وخلوقه ولطيفه جدا واتمنى اني حتى بعد ما المبادره تخلص اني افضل اتعلم منه",
-        "englishTranslation": null,
+        "englishTranslation": "He never holds back his knowledge, even when a question goes beyond the session. He's always willing to share his experience and help us learn more.",
         "displayExcerpt": "مبيبخلش ب اي معلومه حتى لو برا إطار السيشن بيديك كل معلوماته وخبراته عادي جدا"
       },
       "source": {
@@ -122,8 +129,9 @@
         "url": null,
         "date": null
       },
-      "featured": true,
-      "order": 4,
+      "isPseudonym": true,
+      "isFeatured": true,
+      "displayOrder": 7,
       "publicationReviewRequired": true,
       "editorialTheme": "Mentorship beyond sessions"
     },
@@ -132,13 +140,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Rawan Khaled",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "حد بيراعي ربنا جدا في شرحه وبيعلمن فعلا اللي ببحصل في الشغل والشركات وبفضل يعيد في الشرح لحد ما تفهم ويربطهولك باللي بيحصل في الحقيقة وبيطبق معاك واحدة واحدة ومش بيتفه من اي سؤال بالعكس اي سؤال بيساعدك توصل لاجابته وتفهمه ويوسع مداركك",
-        "englishTranslation": null,
+        "englishTranslation": "He connects everything we learn to real workplace situations and guides us through practical examples step by step. No question is ever dismissed; he helps you understand the answer and think more deeply.",
         "displayExcerpt": "ويربطهولك باللي بيحصل في الحقيقة وبيطبق معاك واحدة واحدة ومش بيتفه من اي سؤال بالعكس اي سؤال بيساعدك توصل لاجابته وتفهمه ويوسع مداركك"
       },
       "source": {
@@ -147,8 +156,9 @@
         "url": null,
         "date": null
       },
-      "featured": false,
-      "order": 5,
+      "isPseudonym": true,
+      "isFeatured": false,
+      "displayOrder": 8,
       "publicationReviewRequired": true,
       "editorialTheme": "Real-world knowledge & thoughtful questions"
     },
@@ -157,13 +167,14 @@
       "group": "student",
       "author": {
         "name": null,
-        "displayName": "متدرب/ة — الاسم غير متاح",
+        "displayName": "Yehia Mohamed",
+        "role": "Student",
         "attributionStatus": "anonymous"
       },
       "quote": {
         "language": "ar",
         "original": "تجربة ممتازة ..متابعة وشرح وامثلة من واقع الشغل العملي والاهتمام بالجانب التطبيقي والfeedbacking والتطوير اول بأول بصراحة اكبر ميزة غير التعامل professional اللي ساعدنا نشوف م احمد ك قدوة حسنة مش علي قد المادة العلمية فقط",
-        "englishTranslation": null,
+        "englishTranslation": "The sessions included real-world examples, practical exercises, continuous follow-ups, and valuable feedback. His professionalism and genuine commitment to our development made the experience exceptional.",
         "displayExcerpt": "متابعة وشرح وامثلة من واقع الشغل العملي والاهتمام بالجانب التطبيقي والfeedbacking والتطوير اول بأول"
       },
       "source": {
@@ -172,8 +183,9 @@
         "url": null,
         "date": null
       },
-      "featured": true,
-      "order": 6,
+      "isPseudonym": true,
+      "isFeatured": true,
+      "displayOrder": 9,
       "publicationReviewRequired": true,
       "editorialTheme": "Practical application & continuous feedback"
     },
@@ -198,8 +210,9 @@
         "url": "https://www.linkedin.com/in/mohamed-hawary-ba632b14a/",
         "date": "2024-10-04"
       },
-      "featured": true,
-      "order": 1,
+      "isPseudonym": false,
+      "isFeatured": true,
+      "displayOrder": 1,
       "publicationReviewRequired": false
     },
     {
@@ -223,8 +236,9 @@
         "url": "https://www.linkedin.com/in/abdallah-habib-test/",
         "date": "2024-09-09"
       },
-      "featured": true,
-      "order": 2,
+      "isPseudonym": false,
+      "isFeatured": true,
+      "displayOrder": 2,
       "publicationReviewRequired": false
     },
     {
@@ -248,8 +262,9 @@
         "url": "https://www.linkedin.com/in/assemabudeif/",
         "date": "2023-09-03"
       },
-      "featured": false,
-      "order": 3,
+      "isPseudonym": false,
+      "isFeatured": true,
+      "displayOrder": 3,
       "publicationReviewRequired": false
     }
   ]

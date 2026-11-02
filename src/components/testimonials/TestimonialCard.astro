@@ -3,19 +3,16 @@ import type { Testimonial } from '../../data/testimonials';
 
 interface Props { testimonial: Testimonial; index: number }
 const { testimonial, index } = Astro.props;
-const isStudent = testimonial.group === 'student';
-const original = testimonial.quote.original;
-const preview = isStudent ? testimonial.quote.displayExcerpt : original.split('\n\n')[0];
-const hasMore = preview !== original;
-const language = testimonial.quote.language;
-const direction = language === 'ar' ? 'rtl' : 'ltr';
+const isStudent = testimonial.category === 'student';
+const preview = isStudent ? testimonial.quote : testimonial.quote.split('\n\n')[0];
+const hasMore = preview !== testimonial.quote;
 ---
 <article class:list={['testimonial-card', { 'testimonial-card-student': isStudent }]} data-testimonial-id={testimonial.id}>
   <div class="testimonial-card-top"><span class="mono">{String(index).padStart(2, '0')} / {isStudent ? 'STUDENT RESPONSE' : 'LINKEDIN RECOMMENDATION'}</span><span class="testimonial-mark" aria-hidden="true">“</span></div>
-  <blockquote class="testimonial-preview" lang={language} dir={direction}>{preview}</blockquote>
-  {hasMore && <details class="testimonial-full"><summary>{isStudent ? 'Read original response' : 'Read full recommendation'} <span aria-hidden="true">↗</span></summary><blockquote lang={language} dir={direction}>{original}</blockquote></details>}
+  <blockquote class="testimonial-preview" lang={testimonial.language} dir="ltr">{preview}</blockquote>
+  {hasMore && <details class="testimonial-full"><summary>Read full recommendation <span aria-hidden="true">↗</span></summary><blockquote lang={testimonial.language} dir="ltr">{testimonial.quote}</blockquote></details>}
   <div class="testimonial-attribution">
-    <div><p class="testimonial-author" lang={isStudent ? 'ar' : 'en'} dir={direction}>{testimonial.author.displayName}</p><p class="testimonial-role">{isStudent ? 'Student feedback · Name not provided' : testimonial.author.role}</p></div>
-    {testimonial.group === 'colleague' && <a href={testimonial.source.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${testimonial.author.displayName}'s LinkedIn profile (opens in new tab)`}>Profile ↗</a>}
+    <div><p class="testimonial-author" lang="en">{testimonial.displayName}</p><p class="testimonial-role">{testimonial.role}</p></div>
+    {testimonial.linkedInUrl && <a href={testimonial.linkedInUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${testimonial.displayName}'s LinkedIn profile (opens in new tab)`}>Profile ↗</a>}
   </div>
 </article>
