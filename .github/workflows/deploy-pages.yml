@@ -36,7 +36,8 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-          SITE_URL: https://ahmedsayed28.github.io/ahmed-sayed-portfolio
+          SITE_URL: https://ahmedsayed28.github.io
+          BASE_PATH: /ahmed-sayed-portfolio
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

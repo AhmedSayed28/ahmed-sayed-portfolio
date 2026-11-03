@@ -4,7 +4,8 @@ import TestimonialCard from '../../components/testimonials/TestimonialCard.astro
 import { orderedTestimonials } from '../../data/testimonials';
 
 const testimonials = orderedTestimonials('allTestimonialsOrder');
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <BaseLayout title="Kind Words — Ahmed Sayed" description="Authentic recommendations and student feedback for Ahmed Sayed Ahmed.">
-  <div class="kind-words-page shell"><a class="back-link" href="/#reviews">← Back to the portfolio</a><div class="kind-words-heading"><span class="eyebrow">GET /human/reviews · COMPLETE RECORD</span><h1>Kind words from real people.</h1><p>Some reviews come from code. The meaningful ones come from people.</p><p class="kind-words-note">Student names are pseudonyms pending confirmation.</p></div><div class="testimonials-grid">{testimonials.map((testimonial, index) => <TestimonialCard testimonial={testimonial} index={index + 1} />)}</div></div>
+  <div class="kind-words-page shell"><a class="back-link" href={`${base}#reviews`}>← Back to the portfolio</a><div class="kind-words-heading"><span class="eyebrow">GET /human/reviews · COMPLETE RECORD</span><h1>Kind words from real people.</h1><p>Some reviews come from code. The meaningful ones come from people.</p><p class="kind-words-note">Student names are pseudonyms pending confirmation.</p></div><div class="testimonials-grid">{testimonials.map((testimonial, index) => <TestimonialCard testimonial={testimonial} index={index + 1} />)}</div></div>
 </BaseLayout>

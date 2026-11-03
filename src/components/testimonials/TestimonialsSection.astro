@@ -4,9 +4,10 @@ import SectionHeading from '../common/SectionHeading.astro';
 import TestimonialCard from './TestimonialCard.astro';
 
 const testimonials = orderedTestimonials('homepageOrder');
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <section id="reviews" class="section testimonials-section" aria-labelledby="reviews-title"><div class="shell">
-  <div class="testimonials-intro"><SectionHeading id="reviews-title" index="04" endpoint="GET /human/reviews" title="Peer-reviewed. Human-approved." description="Some reviews come from code. The meaningful ones come from people." /><a class="testimonials-all-link" href="/kind-words/">Read all kind words <span aria-hidden="true">↗</span></a></div>
+  <div class="testimonials-intro"><SectionHeading id="reviews-title" index="04" endpoint="GET /human/reviews" title="Peer-reviewed. Human-approved." description="Some reviews come from code. The meaningful ones come from people." /><a class="testimonials-all-link" href={`${base}kind-words/`}>Read all kind words <span aria-hidden="true">↗</span></a></div>
   <div class="testimonials-grid">{testimonials.map((testimonial, index) => <TestimonialCard testimonial={testimonial} index={index + 1} />)}</div>
   <p class="testimonials-footnote">Student names are pseudonyms pending confirmation.</p>
 </div></section>

@@ -7,6 +7,7 @@ import Footer from '../components/common/Footer.astro';
 interface Props { title?: string; description?: string; image?: string }
 const { title = siteConfig.title, description = siteConfig.description, image } = Astro.props;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <!doctype html>
 <html lang="en">
@@ -21,7 +22,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
     {image && <meta property="og:image" content={image} />}
     {canonical && <link rel="canonical" href={canonical} />}
     {canonical && <meta property="og:url" content={canonical} />}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
